@@ -1,7 +1,7 @@
 @import "accessibility_settings";
 
 /* general icons for IE7 */
-[class*=".accessibility.#{$classPrefix}"] {
+[class*="accessibility #{$classPrefix}"] {
   font-family: $fontName;
   font-weight: normal;
   font-style: normal;
