@@ -4,17 +4,17 @@
 @include face;
 
 /* global foundicon styles */
-[class*="general-enclosed #{$classPrefix}"] {
-  display: inline;
-  width: auto;
-  height: auto;
-  line-height: inherit;
-  vertical-align: baseline;
-  background-image: none;
-  background-position: 0 0;
-  background-repeat: repeat;
+[class~=general-enclosed][class*="#{$classPrefix}"] {
+    display: inline;
+    width: auto;
+    height: auto;
+    line-height: inherit;
+    vertical-align: baseline;
+    background-image: none;
+    background-position: 0 0;
+    background-repeat: repeat;
 }
-[class*="general-enclosed #{$classPrefix}"]:before {
+[class~=general-enclosed][class*="#{$classPrefix}"]:before {
   font-family: $fontName;
   font-weight: normal;
   font-style: normal;

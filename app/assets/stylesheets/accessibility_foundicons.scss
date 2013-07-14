@@ -4,7 +4,7 @@
 @include face;
 
 /* global foundicon styles */
-[class*="accessibility #{$classPrefix}"] {
+[class~=accessibility][class*="#{$classPrefix}"] {
   display: inline;
   width: auto;
   height: auto;
@@ -14,7 +14,7 @@
   background-position: 0 0;
   background-repeat: repeat;
 }
-[class*="accessibility #{$classPrefix}"]:before {
+[class~=accessibility][class*="#{$classPrefix}"]:before {
   font-family: $fontName;
   font-weight: normal;
   font-style: normal;
